@@ -25,15 +25,6 @@
   button i {
     font-size: 15px;
   }
-@media (max-width: 500px) {
-    #random-image {
-        width: 80%;
-    }
-    button {
-        padding: 5px 10px;
-        font-size: 0.8em;
-    }
-}
 
   img {
   max-width: 100%;
