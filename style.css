@@ -1,0 +1,28 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #random-image {
+    width: 500px;
+    height: 400px;
+  }
+  
+  button {
+    margin-top: 2px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #888888;
+    cursor: pointer;
+    outline: none;
+    align-self: center;
+  }
+  
+  button i {
+    font-size: 20px;
+  }
+  
