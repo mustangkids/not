@@ -10,16 +10,15 @@ window.onload = function() {
     function showRandomImage() {
       const randomIndex = Math.floor(Math.random() * images.length);
       imageContainer.src = images[randomIndex];
-      localStorage.setItem("lastImage", images[randomIndex]);
+      localStorage.setItem(`lastImage_${window.location.href}`, images[randomIndex]);
     }
   
     refreshButton.addEventListener("click", showRandomImage);
   
-    const lastImage = localStorage.getItem("lastImage");
+    const lastImage = localStorage.getItem(`lastImage_${window.location.href}`);
     if (lastImage) {
       imageContainer.src = lastImage;
     } else {
       showRandomImage();
     }
   };
-  
